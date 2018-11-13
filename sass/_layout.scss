@@ -1,0 +1,33 @@
+[class*="col-"]{
+	float: left;
+	min-height: 1px;
+}
+
+.row:before, .row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@mixin grid($value)
+{
+	@for $a from 1 through 12{
+		.col-#{$value}-#{$a}{
+			width: ($a/12) * 100%;
+		}
+	}
+
+	@for $a from 1 through 12{
+		.col-offset-#{$value}-#{$a}{
+			margin-left: ($a/12) * 100%;
+		}
+	}
+}
+
+@include grid(l); 

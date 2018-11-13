@@ -22,9 +22,33 @@ $blue-1: #56819F;
 $btn: 20px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
 
+
+.mont{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Sizes */
+
+$btn-width: 100px;
+$btn-heigth: 40px;
+
+
+/* Links */
+
+.line-header{
+	width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black; 
+
+	&:hover{
+		background-color: $grey-3;
+		cursor:pointer;
+	}
+}
+
+
+/* Colors class*/
 .grey-1{
 	color: $grey-1; 
 }
@@ -73,21 +97,3 @@ $paragraph-font: "Open Sans", Helvetica, Arial;
 	color: $blue-1;
 }
 
-.btn-silver{
-	background-color: $grey-2;
-	width: 80px;
-	height: 40px;
-	color: #fff;
-	font-size: $btn;
-	
-	a{
-		text-decoration: none;
-		color: white;
-		padding-left: 6px;
-		
-	}
-
-	&:hover{
-		background-color: $grey-3;
-	}
-}

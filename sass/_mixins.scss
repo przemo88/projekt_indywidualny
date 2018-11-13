@@ -1,0 +1,75 @@
+/* Buttons */
+@mixin btn-silver{
+	background-color: $grey-2;
+	width: $btn-width;
+	height: $btn-heigth;
+	color: #fff;
+	font-size: $btn;
+
+	a{
+		text-decoration: none;
+		color: white;
+		padding-left: 5px;
+		
+	}
+	
+	&:hover{
+		background-color: $grey-3;
+	}
+}
+
+.btn-silver{
+	@include btn-silver;
+}
+
+@mixin btn-orange{
+	@include btn-silver;
+	background-color: $orange-1;
+
+	&:hover{
+		background-color: $orange-2;
+	}
+}
+
+.btn-orange{
+	@include btn-orange;
+}
+
+@mixin btn-disabled{
+	@include btn-silver;
+}
+
+.btn-disabled{
+	@include btn-disabled;
+
+
+		a:hover{
+			pointer-events: none;
+			cursor: default;
+		}
+	}
+
+/* Tabs */
+
+@mixin tabs($color){
+	&:before{
+		content:"  ";
+		background-color: $color;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid black;
+	}
+}
+
+.green-tabs{
+	@include tabs(green);
+}
+
+.orange-tabs{
+	@include tabs(orange);
+}
+
+
+
