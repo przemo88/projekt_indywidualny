@@ -49,17 +49,27 @@
 		}
 	}
 
+/* Mini icons */
+
+@mixin mini($w, $h){
+	&:before{
+		content:"";
+		margin-right:10px;
+		margin-bottom: -2px;
+		display: inline-block;
+		width: $w;
+		height: $h;
+	}
+}
+
+
 /* Tabs */
 
 @mixin tabs($color){
+	@include mini(16px, 16px);
 	&:before{
-		content:"  ";
 		background-color: $color;
-		display: inline-block;
-		width: 20px;
-		height: 20px;
 		border-radius: 50%;
-		border: 1px solid black;
 	}
 }
 
@@ -71,5 +81,43 @@
 	@include tabs(orange);
 }
 
+/* Mini Picture */
 
+@mixin mini_picture($name)
+{
+	@include mini(16px, 16px);
+	&:before{
+		content: "";
+		background-image: url($name);
+		position: relative;
+	}
+}
 
+.links{
+	@include mini_picture('../mini/links.png');
+}
+
+.details{
+	@include mini_picture('../mini/details.png');
+}
+
+.banners{
+	@include mini_picture('../mini/banners.png');
+}
+
+.payout{
+	@include mini_picture('../mini/payout.png');
+}
+
+.postback{
+	@include mini_picture('../mini/postback.png');
+}
+
+.star{
+	@include mini_picture('../mini/star.png');
+}
+
+.photo{
+	@include mini_picture('../mini/photo.png');
+	@include mini(43px, 43px);
+}
