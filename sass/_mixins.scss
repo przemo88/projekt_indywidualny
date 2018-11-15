@@ -5,11 +5,14 @@
 	height: $btn-heigth;
 	color: #fff;
 	font-size: $btn;
+	position:relative;
+	padding-top: 10px;
+	padding-left: 10px;
 
 	a{
 		text-decoration: none;
 		color: white;
-		padding-left: 5px;
+		padding-top: 5px;
 		
 	}
 	
@@ -25,7 +28,6 @@
 @mixin btn-orange{
 	@include btn-silver;
 	background-color: $orange-1;
-
 	&:hover{
 		background-color: $orange-2;
 	}
@@ -52,9 +54,11 @@
 /* Mini icons */
 
 @mixin mini($w, $h){
+	
 	&:before{
 		content:"";
-		margin-right:10px;
+		margin-left:20px;
+		margin-right: 15px;
 		margin-bottom: -2px;
 		display: inline-block;
 		width: $w;
@@ -70,6 +74,8 @@
 	&:before{
 		background-color: $color;
 		border-radius: 50%;
+		margin-left:10px;
+		margin-bottom: -2px;
 	}
 }
 
@@ -90,6 +96,7 @@
 		content: "";
 		background-image: url($name);
 		position: relative;
+		background-repeat: no-repeat;		
 	}
 }
 
@@ -109,6 +116,11 @@
 	@include mini_picture('../mini/payout.png');
 }
 
+.personal{
+	@include mini_picture('../mini/personal.png');
+	
+}
+
 .postback{
 	@include mini_picture('../mini/postback.png');
 }
@@ -117,7 +129,64 @@
 	@include mini_picture('../mini/star.png');
 }
 
+.dotted{
+	@include mini_picture('../mini/dotted.png');
+}
+
 .photo{
 	@include mini_picture('../mini/photo.png');
 	@include mini(43px, 43px);
 }
+
+
+/* Links */
+
+
+
+@mixin border-bottom{
+
+	width: 100%;
+	border-bottom: 1px solid black; 
+	&:hover{
+		background-color: $grey-3;
+		cursor:pointer;
+	}
+}
+
+.border-bottom{
+	@include border-bottom;
+}
+
+.online{
+		
+			
+	&:before{
+		content:"";
+		display: inline-block;
+		width: 11px;
+		height: 11px;
+		background-image: url('../mini/dotted.png');
+		margin-left: -30px;
+		margin-top: -20px;
+		position: absolute;
+		background-repeat: no-repeat;		
+	}	
+	}
+
+
+.logo{
+	background-image:url('../mini/logo.png');
+	width: 86px;
+	height: 25px;
+	background-size: cover;
+	margin-left: 10px;	
+}
+
+.hamburger{
+	background-image:url('../mini/hamburger.png');
+	width: 50px;
+	height: 20px;
+	margin-left: 60px;
+	margin-top: 5px;
+}
+

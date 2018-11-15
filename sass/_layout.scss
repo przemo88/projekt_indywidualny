@@ -7,6 +7,7 @@
 	content: "";
 	display: table;
 	clear: both;
+	
 }
 
 
@@ -15,8 +16,7 @@
 	margin: 0 auto;
 }
 
-@mixin grid($value)
-{
+@mixin grid($value){
 	@for $a from 1 through 12{
 		.col-#{$value}-#{$a}{
 			width: ($a/12) * 100%;
@@ -31,3 +31,15 @@
 }
 
 @include grid(l); 
+
+/* margin top */
+
+@mixin margin-top{
+	@for $a from 1 through 20{
+		.mt-#{$a}{
+			margin-top: (10px * $a)+5px;
+		}
+	}
+}
+
+@include margin-top;
