@@ -25,8 +25,6 @@ $btn: 20px;
 
 /* Fonts */
 
-
-
 .roboto{
 	font-family: 'Roboto Slab', serif;
 }
@@ -40,7 +38,7 @@ $btn: 20px;
 }
 /* Sizes */
 
-$btn-width: 100px;
+$btn-width: 110px;
 $btn-heigth: 40px;
 
 
@@ -116,12 +114,9 @@ $btn-heigth: 40px;
 
 
 .line-height{
-	line-height: 50px;
+	line-height: 40px;
 
 	a{
-display: flex;
-justify-content: flex-start;
-		text-align: left;
-		color: red;
+		text-decoration: none;
 	}
 }
