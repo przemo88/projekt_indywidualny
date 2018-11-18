@@ -19,6 +19,8 @@ $blue-1: #56819F;
 
 $white:#FFF;
 
+$silver: #dbdbdb;
+
 
 /* Font sizes */
 $btn: 20px;
@@ -40,6 +42,7 @@ $btn: 20px;
 
 $btn-width: 110px;
 $btn-heigth: 40px;
+
 
 
 /* Margin */
@@ -96,10 +99,14 @@ $btn-heigth: 40px;
 	color: $blue-1;
 }
 
+.silver{
+	color: $silver;
+}
+
 /* Menu */
 
 .menu{
-	height: 100vh;
+	height: 200vh;
 	background-color: $grey-1;
 	color:$white;
 
@@ -120,3 +127,12 @@ $btn-heigth: 40px;
 		text-decoration: none;
 	}
 }
+
+/* Margin */
+
+.align-right{
+	   text-align: right;
+}
+
+
+

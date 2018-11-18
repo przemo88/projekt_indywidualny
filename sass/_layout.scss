@@ -35,7 +35,7 @@
 /* margin top */
 
 @mixin margin-top{
-	@for $a from 1 through 20{
+	@for $a from 1 through 30{
 		.mt-#{$a}{
 			margin-top: (10px * $a)+5px;
 		}
