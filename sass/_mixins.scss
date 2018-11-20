@@ -1,3 +1,8 @@
+.module{
+	background-color: silver;
+	padding: 20px;
+}
+
 /* Buttons */
 @mixin btn-silver{
 	background-color: $grey-2;
@@ -31,6 +36,23 @@
 	&:hover{
 		background-color: $orange-2;
 	}
+}
+
+@mixin btn-orange-2{
+	@include btn-orange;
+	width: $btn-width / 4;
+	height: $btn-heigth / 2;
+	border-radius: 5px;
+	position: absolute;
+	left: 51.5em;
+	top: 5.5em;
+	background-image: url('../mini/input-btn.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-orange-2{
+	@include btn-orange-2;
 }
 
 .btn-orange{
@@ -143,14 +165,14 @@
 
 .input-form{
 	padding: 7px;
-	
-		/*&:after{
-			content: url('../mini/delete.png'); 
-			margin-left: -2%;
-			width:16px;
-			height: 16px;
-		}*/
+	border: 1px solid black;
 	}
+
+.form-photo{
+	background-image: url("../mini/filter.png");
+    background-repeat: no-repeat;
+    background-position: right .5em center;	
+}
 
 /* Links */ 
 
