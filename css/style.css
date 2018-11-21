@@ -74,7 +74,7 @@
 
 /* Menu */
 .menu {
-  height: 200vh;
+  height: 204vh;
   background-color: #333;
   color: #FFF;
 }
@@ -100,9 +100,19 @@
   text-align: right;
 }
 
-.module {
+.outside {
   background-color: silver;
-  padding: 20px;
+  height: 740px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.inside {
+  background: white;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  height: 720px;
 }
 
 /* Buttons */
@@ -141,8 +151,8 @@
   height: 20px;
   border-radius: 5px;
   position: absolute;
-  left: 51.5em;
-  top: 5.5em;
+  left: 72%;
+  top: 13%;
   background-image: url("../mini/input-btn.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -416,7 +426,7 @@
 
 /* Form */
 .input-form {
-  padding: 7px;
+  padding: 9px;
   border: 1px solid black;
 }
 
