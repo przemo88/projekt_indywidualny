@@ -135,4 +135,12 @@ $btn-heigth: 40px;
 }
 
 
+/* Border */
 
+.border-left{
+	border-right: 1px solid black;
+	width: 1px;
+	height: 100%;
+	text-align: right;
+	padding-left: 15px;
+}

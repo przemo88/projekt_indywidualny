@@ -169,6 +169,63 @@
 }
 
 
+/* Top */
+
+@mixin text{
+	position: absolute;
+  	top: 1%;
+    left:23em;
+    z-index: 2;
+ }
+
+@mixin img{
+	z-index: 1;
+   padding-top:20px;
+   padding-bottom: 20px;
+}
+
+.top{
+    img{
+   @include img;
+   padding-left:14em;
+
+   &:nth-child(4)
+   {
+   	padding-left: 1em;
+   }
+
+   &:nth-child(5)
+   {
+   	padding-left: 11em;
+   }
+} 
+
+.text-1{
+   @include text;
+   font-size: 24px;
+   font-family: "Droid Serif", serif;
+   color: $silver;
+   top: -1%;
+ }
+ .text-2{
+ 	@include text;
+ 	font-size: 18px;
+ 	font-family: 'Roboto Slab', serif;
+ 	padding-left:33em;
+ 	top: 0.25%;
+ 	}
+}
+
+.bell{
+ 	position:relative;
+   padding-left: 3em;
+   padding-top:20px;
+   padding-left: 1em;
+}
+
+
+
+
 /* Form */
 
 .input-form{
