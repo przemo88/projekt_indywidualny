@@ -38,6 +38,16 @@ $btn: 20px;
 .mont{
 	font-family: 'Montserrat', sans-serif;
 }
+
+$wallet-font-size: 20px;
+$login-font-size: 13px;
+
+.wallet-font{
+	font-size: $wallet-font-size;
+}
+.login-font{
+	font-size: $login-font-size;
+}
 /* Sizes */
 
 $btn-width: 110px;
@@ -106,7 +116,7 @@ $btn-heigth: 40px;
 /* Menu */
 
 .menu{
-	height: 204vh;
+	height: 212vh;
 	background-color: $grey-1;
 	color:$white;
 

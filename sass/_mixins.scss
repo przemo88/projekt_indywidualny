@@ -2,11 +2,13 @@
 	background-color: silver;
 	height: 740px;
 	width: 100%;
-	padding: 20px 0;
+	padding: 25px 0;
 }
 
 .inside{
-	background: white; width: 95%; margin: 0 auto;
+	background: white; 
+	width: 95%; 
+	margin: 0 auto;
 	padding:10px;
 	height: 720px;
 }
@@ -163,69 +165,78 @@
 	@include mini_picture('../mini/dotted.png');
 }
 
+.notification{
+	@include mini_picture('../mini/notification.png');
+}
+
 .photo{
 	@include mini_picture('../mini/photo.png');
 	@include mini(43px, 43px);
 }
 
+@mixin online{
+	&:before{
+		content:"";
+		display: inline-block;
+		width: 11px;
+		height: 11px;
+		background-image: url('../mini/dotted.png');
+		margin-left: -4.25%;
+		margin-top: -20px;
+		position: absolute;
+		background-repeat: no-repeat;		
+		}	
+}
+
+.online{
+	@include online;	
+}
 
 /* Top */
 
-@mixin text{
+
+
+.top {
+  background: #fff;
+  padding: 0;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+
+  
+  .top-item {
+    padding: 1em;
+    border-left: 1px solid #bbb;
+
+
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    &.spaced {
+      img {
+        &:first-child {
+          margin-right: .5em;
+        }
+        &:last-child {
+          margin-left: .5em;
+        }
+      }
+    }
+  }
+}
+
+.notification-dotted{
+	@include online;
+	&:before{
+	background-image: url('../mini/orange-dotted.png');
 	position: absolute;
-  	top: 1%;
-    left:23em;
-    z-index: 2;
- }
-
-@mixin img{
-	z-index: 1;
-   padding-top:20px;
-   padding-bottom: 20px;
+	margin: 0% 1%;
+			}
 }
-
-.top{
-    img{
-   @include img;
-   padding-left:14em;
-
-   &:nth-child(4)
-   {
-   	padding-left: 1em;
-   }
-
-   &:nth-child(5)
-   {
-   	padding-left: 11em;
-   }
-} 
-
-.text-1{
-   @include text;
-   font-size: 24px;
-   font-family: "Droid Serif", serif;
-   color: $silver;
-   top: -1%;
- }
- .text-2{
- 	@include text;
- 	font-size: 18px;
- 	font-family: 'Roboto Slab', serif;
- 	padding-left:33em;
- 	top: 0.25%;
- 	}
-}
-
-.bell{
- 	position:relative;
-   padding-left: 3em;
-   padding-top:20px;
-   padding-left: 1em;
-}
-
-
-
-
 /* Form */
 
 .input-form{
@@ -244,7 +255,6 @@
 
 
 @mixin border-bottom{
-	width: 100%;
 	border-bottom: 1px solid black; 
 }
 
@@ -263,7 +273,7 @@
 	}
 }
 
-	
+
 
 .border-bottom{
 	@include border-bottom;
@@ -272,24 +282,6 @@
 .border-bottom-links{
 	@include border-bottom-links;
 }
-
-
-.online{
-		
-			
-	&:before{
-		content:"";
-		display: inline-block;
-		width: 11px;
-		height: 11px;
-		background-image: url('../mini/dotted.png');
-		margin-left: -4.25%;
-		margin-top: -20px;
-		position: absolute;
-		background-repeat: no-repeat;		
-		}	
-	}
-
 
 .logo{
 	background-image:url('../mini/logo.png');
