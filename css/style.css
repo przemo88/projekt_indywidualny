@@ -82,7 +82,7 @@
 
 /* Menu */
 .menu {
-  height: 212vh;
+  height: 215vh;
   background-color: #333;
   color: #FFF;
 }
@@ -128,8 +128,12 @@
   background: white;
   width: 95%;
   margin: 0 auto;
-  padding: 10px;
-  height: 720px;
+  padding: 10px 0px 10px 0px;
+  height: 740px;
+}
+
+.section-text {
+  padding: 1em;
 }
 
 /* Buttons */
