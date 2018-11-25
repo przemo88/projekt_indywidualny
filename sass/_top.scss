@@ -1,0 +1,43 @@
+/* Top */
+
+.top {
+  background: #fff;
+  padding: 0;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+
+  
+  .top-item {
+    padding: 1em;
+    border-left: 1px solid #bbb;
+
+
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    &.spaced {
+      img {
+        &:first-child {
+          margin-right: .5em;
+        }
+        &:last-child {
+          margin-left: .5em;
+        }
+      }
+    }
+  }
+}
+
+.notification-dotted{
+	@include online;
+	&:before{
+	background-image: url('../mini/orange-dotted.png');
+	position: absolute;
+	margin: 0% 1%;
+			}
+}

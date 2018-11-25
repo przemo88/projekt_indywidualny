@@ -1,0 +1,69 @@
+/* Buttons */
+@mixin btn-silver{
+	background-color: $grey-2;
+	width: $btn-width;
+	height: $btn-heigth;
+	color: #fff;
+	font-size: $btn;
+	position:relative;
+	padding-top: 10px;
+	padding-left: 10px;
+
+	a{
+		text-decoration: none;
+		color: white;
+		padding-top: 5px;
+		
+	}
+	
+	&:hover{
+		background-color: $grey-3;
+	}
+}
+
+.btn-silver{
+	@include btn-silver;
+}
+
+@mixin btn-orange{
+	@include btn-silver;
+	background-color: $orange-1;
+	&:hover{
+		background-color: $orange-2;
+	}
+}
+
+@mixin btn-orange-2{
+	@include btn-orange;
+	width: $btn-width / 4;
+	height: $btn-heigth / 2;
+	border-radius: 5px;
+	position: absolute;
+	left: 72%;
+	top: 13%;
+	background-image: url('../mini/input-btn.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-orange-2{
+	@include btn-orange-2;
+}
+
+.btn-orange{
+	@include btn-orange;
+}
+
+@mixin btn-disabled{
+	@include btn-silver;
+}
+
+.btn-disabled{
+	@include btn-disabled;
+
+
+		a:hover{
+			pointer-events: none;
+			cursor: default;
+		}
+	}

@@ -1,182 +1,3 @@
-.outside{
-	background-color: silver;
-	height: 740px;
-	width: 100%;
-	padding: 25px 0;
-}
-
-.inside{
-	background: white; 
-	width: 95%; 
-	margin: 0 auto;
-	padding:10px 0px 10px 0px;
-	height: 740px;
-}
-
-.section-text{
-	padding: 1em;
-}
-
-/* Buttons */
-@mixin btn-silver{
-	background-color: $grey-2;
-	width: $btn-width;
-	height: $btn-heigth;
-	color: #fff;
-	font-size: $btn;
-	position:relative;
-	padding-top: 10px;
-	padding-left: 10px;
-
-	a{
-		text-decoration: none;
-		color: white;
-		padding-top: 5px;
-		
-	}
-	
-	&:hover{
-		background-color: $grey-3;
-	}
-}
-
-.btn-silver{
-	@include btn-silver;
-}
-
-@mixin btn-orange{
-	@include btn-silver;
-	background-color: $orange-1;
-	&:hover{
-		background-color: $orange-2;
-	}
-}
-
-@mixin btn-orange-2{
-	@include btn-orange;
-	width: $btn-width / 4;
-	height: $btn-heigth / 2;
-	border-radius: 5px;
-	position: absolute;
-	left: 72%;
-	top: 13%;
-	background-image: url('../mini/input-btn.png');
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.btn-orange-2{
-	@include btn-orange-2;
-}
-
-.btn-orange{
-	@include btn-orange;
-}
-
-@mixin btn-disabled{
-	@include btn-silver;
-}
-
-.btn-disabled{
-	@include btn-disabled;
-
-
-		a:hover{
-			pointer-events: none;
-			cursor: default;
-		}
-	}
-
-/* Mini icons */
-
-@mixin mini($w, $h){
-	
-	&:before{
-		content:"";
-		margin-left:10%;
-		margin-right: 3%;
-		margin-bottom: -2px;
-		display: inline-block;
-		width: $w;
-		height: $h;
-	}
-}
-
-
-/* Tabs */
-
-@mixin tabs($color){
-	@include mini(16px, 16px);
-	&:before{
-		background-color: $color;
-		border-radius: 50%;
-		margin-left:10px;
-		margin-bottom: -2px;
-	}
-}
-
-.green-tabs{
-	@include tabs(green);
-}
-
-.orange-tabs{
-	@include tabs(orange);
-}
-
-/* Mini Picture */
-
-@mixin mini_picture($name)
-{
-	@include mini(16px, 16px);
-	&:before{
-		content: "";
-		background-image: url($name);
-		position: relative;
-		background-repeat: no-repeat;		
-	}
-}
-
-.links{
-	@include mini_picture('../mini/links.png');
-}
-
-.details{
-	@include mini_picture('../mini/details.png');
-}
-
-.banners{
-	@include mini_picture('../mini/banners.png');
-}
-
-.payout{
-	@include mini_picture('../mini/payout.png');
-}
-
-.personal{
-	@include mini_picture('../mini/personal.png');
-	
-}
-
-.postback{
-	@include mini_picture('../mini/postback.png');
-}
-
-.star{
-	@include mini_picture('../mini/star.png');
-}
-
-.dotted{
-	@include mini_picture('../mini/dotted.png');
-}
-
-.notification{
-	@include mini_picture('../mini/notification.png');
-}
-
-.photo{
-	@include mini_picture('../mini/photo.png');
-	@include mini(43px, 43px);
-}
 
 @mixin online{
 	&:before{
@@ -192,71 +13,46 @@
 		}	
 }
 
-.online{
-	@include online;	
-}
 
-/* Top */
-
-
-
-.top {
-  background: #fff;
-  padding: 0;
-  border-bottom: 1px solid #bbb;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  right: 0;
-
-  
-  .top-item {
-    padding: 1em;
-    border-left: 1px solid #bbb;
-
-
-    
-    img {
-      vertical-align: middle;
-    }
-    
-    &.spaced {
-      img {
-        &:first-child {
-          margin-right: .5em;
-        }
-        &:last-child {
-          margin-left: .5em;
-        }
-      }
-    }
-  }
-}
-
-.notification-dotted{
-	@include online;
+@mixin mini($w, $h){
+	
 	&:before{
-	background-image: url('../mini/orange-dotted.png');
-	position: absolute;
-	margin: 0% 1%;
-			}
-}
-/* Form */
-
-.input-form{
-	padding: 9px;
-	border: 1px solid black;
+		content:"";
+		margin-left:10%;
+		margin-right: 3%;
+		margin-bottom: -2px;
+		display: inline-block;
+		width: $w;
+		height: $h;
 	}
-
-.form-photo{
-	background-image: url("../mini/filter.png");
-    background-repeat: no-repeat;
-    background-position: right .5em center;	
 }
 
-/* Links */ 
+/* Mini Picture */
 
+@mixin mini_picture($name)
+{
+	@include mini(16px, 16px);
+	&:before{
+		content: "";
+		background-image: url($name);
+		position: relative;
+		background-repeat: no-repeat;		
+	}
+}
 
+/* Tabs - dotted*/
+
+@mixin tabs($color){
+	@include mini(16px, 16px);
+	&:before{
+		background-color: $color;
+		border-radius: 50%;
+		margin-left:10px;
+		margin-bottom: -2px;
+	}
+}
+
+/* Borders */
 
 @mixin border-bottom{
 	border-bottom: 1px solid black; 
@@ -277,29 +73,4 @@
 	}
 }
 
-
-
-.border-bottom{
-	@include border-bottom;
-}
-
-.border-bottom-links{
-	@include border-bottom-links;
-}
-
-.logo{
-	background-image:url('../mini/logo.png');
-	width: 86px;
-	height: 34px;
-	background-size: cover;
-	margin-left: 5%;	
-}
-
-.hamburger{
-	background-image:url('../mini/hamburger.png');
-	width: 50px;
-	height: 20px;
-	margin-left: 25%;
-	margin-top: 5%;
-}
 

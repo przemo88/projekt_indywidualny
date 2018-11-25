@@ -1,4 +1,5 @@
-/* Colors */
+/*colors*/
+
 $grey-1: #333;
 $grey-2: #979797;
 $grey-3: #E3E3E3;
@@ -27,27 +28,10 @@ $btn: 20px;
 
 /* Fonts */
 
-.roboto{
-	font-family: 'Roboto Slab', serif;
-}
-
-.droid{
-	font-family: "Droid Serif", serif;
-}
-
-.mont{
-	font-family: 'Montserrat', sans-serif;
-}
-
 $wallet-font-size: 20px;
 $login-font-size: 13px;
 
-.wallet-font{
-	font-size: $wallet-font-size;
-}
-.login-font{
-	font-size: $login-font-size;
-}
+
 /* Sizes */
 
 $btn-width: 110px;
@@ -55,102 +39,4 @@ $btn-heigth: 40px;
 
 
 
-/* Margin */
-.dotted_m{
-	margin-left: 5px;
-}
 
-/* Colors class*/
-.grey-1{
-	color: $grey-1; 
-}
-
-.grey-2{
-	color: $grey-2;
-}
-
-.grey-3{
-	color: $grey-3; 
-}
-
-.orange-1{
-	color: $orange-1;
-}
-
-.orange-2{
-	color: $orange-2; 
-}
-
-.green-1{
-	color: $green-1;
-}
-
-.green-2{
-	color: $green-2;
-}
-
-.green-3{
-	color: $green-3;
-}
-
-.red-1{
-	color: $red-1;
-}
-
-.red-2{
-	color: $red-2;
-}
-
-.red-3{
-	color: $red-3;
-}
-
-.blue-1{
-	color: $blue-1;
-}
-
-.silver{
-	color: $silver;
-}
-
-/* Menu */
-
-.menu{
-	height: 215vh;
-	background-color: $grey-1;
-	color:$white;
-
-		.menu-list{
-			line-height: 50px;
-			:hover{
-			background-color:$grey-2;
-		}
-			
-		}	
-	}
-
-
-.line-height{
-	line-height: 40px;
-
-	a{
-		text-decoration: none;
-	}
-}
-
-/* Margin */
-
-.align-right{
-	   text-align: right;
-}
-
-
-/* Border */
-
-.border-left{
-	border-right: 1px solid black;
-	width: 1px;
-	height: 100%;
-	text-align: right;
-	padding-left: 15px;
-}

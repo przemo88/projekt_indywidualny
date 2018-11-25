@@ -42,3 +42,68 @@
 }
 
 @include margin-top;
+
+/* Margin */
+.dotted_m{
+	margin-left: 5px;
+}
+
+/* Menu */
+
+.line-height{
+	line-height: 40px;
+
+	a{
+		text-decoration: none;
+	}
+}
+
+/* Margin */
+
+.align-right{
+	   text-align: right;
+}
+
+
+/* Border */
+
+.border-left{
+	border-right: 1px solid green;
+	width: 1px;
+	height: 100%;
+	text-align: right;
+	padding-left: 15px;
+}
+
+/* Borders */
+
+.border-bottom{
+	@include border-bottom;
+}
+
+.border-bottom-links{
+	@include border-bottom-links;
+}
+
+
+/* Container */
+
+.outside{
+	background-color: silver;
+	height: 760px;
+	width: 100%;
+	padding: 25px 0;
+}
+
+.inside{
+	background: white; 
+	width: 95%; 
+	margin: 0 auto;
+	padding:10px 0px 15px 0px;
+	height: 740px;
+}
+
+/* Container header size */
+.section-text{
+	padding: 1em;
+}

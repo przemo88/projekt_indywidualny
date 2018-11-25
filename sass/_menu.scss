@@ -1,0 +1,94 @@
+.menu{
+	height: 218vh;
+	background-color: $grey-1;
+	color:$white;
+
+		.menu-list{
+			line-height: 50px;
+			:hover{
+			background-color:$grey-2;
+		}
+			
+	}	
+}
+
+/* Mini icons */
+
+.links{
+	@include mini_picture('../mini/links.png');
+}
+
+.details{
+	@include mini_picture('../mini/details.png');
+}
+
+.banners{
+	@include mini_picture('../mini/banners.png');
+}
+
+.payout{
+	@include mini_picture('../mini/payout.png');
+}
+
+.personal{
+	@include mini_picture('../mini/personal.png');
+	
+}
+
+.postback{
+	@include mini_picture('../mini/postback.png');
+}
+
+.star{
+	@include mini_picture('../mini/star.png');
+}
+
+.dotted{
+	@include mini_picture('../mini/dotted.png');
+}
+
+.notification{
+	@include mini_picture('../mini/notification.png');
+}
+
+.photo{
+	@include mini_picture('../mini/photo.png');
+	@include mini(43px, 43px);
+}
+
+
+.online{
+	@include online;	
+}
+
+
+
+/* Tabs dotted */
+
+.green-tabs{
+	@include tabs(green);
+}
+
+.orange-tabs{
+	@include tabs(orange);
+}
+
+
+/* Links */ 
+
+.logo{
+	background-image:url('../mini/logo.png');
+	width: 86px;
+	height: 34px;
+	background-size: cover;
+	margin-left: 5%;	
+}
+
+.hamburger{
+	background-image:url('../mini/hamburger.png');
+	width: 50px;
+	height: 20px;
+	margin-left: 25%;
+	margin-top: 5%;
+}
+
