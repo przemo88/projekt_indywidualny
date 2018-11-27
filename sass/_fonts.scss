@@ -16,3 +16,11 @@
 .login-font{
 	font-size: $login-font-size;
 }
+
+@media (min-width: 768px) and (max-width: 1199px)
+{
+	.menu{
+		font-size: $tablet-menu;
+		height:300vh;
+	}
+}

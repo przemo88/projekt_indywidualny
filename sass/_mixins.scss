@@ -1,19 +1,3 @@
-
-@mixin online{
-	&:before{
-		content:"";
-		display: inline-block;
-		width: 11px;
-		height: 11px;
-		background-image: url('../mini/dotted.png');
-		margin-left: -4.25%;
-		margin-top: -20px;
-		position: absolute;
-		background-repeat: no-repeat;		
-		}	
-}
-
-
 @mixin mini($w, $h){
 	
 	&:before{
@@ -24,6 +8,11 @@
 		display: inline-block;
 		width: $w;
 		height: $h;
+		
+		@media (min-width: 768px) and (max-width: 1199px)
+		{
+			margin-left: 15%;
+		}
 	}
 }
 
@@ -68,9 +57,34 @@
 		&:after{
 			content: url('../mini/delete.png'); 
 			margin-left: -2%;
+
 		}
 		
 	}
 }
 
+@mixin photo{
+  display: block;
+  width: 3em;
+  height: 3em;
+  background-repeat: no-repeat;
+  background-image: url('../mini/photo.png');
+  position: relative; 
 
+  @media(min-width: 768px) and (max-width: 1199px)
+  {
+  	width: 4em;
+  	height: 4em;
+  }
+}
+
+@mixin online{
+	display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $green; 
+}

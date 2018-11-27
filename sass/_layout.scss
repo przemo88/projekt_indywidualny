@@ -3,40 +3,27 @@
 	min-height: 1px;
 }
 
-.row:before, .row:after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
+	.row{
+		&:before, &:after{
+			content: "";	
+			display: table;
+			clear: both;
+			}
+		}
 
 .container{
 	max-width: 100%;
 	margin: 0 auto;
 }
 
-@mixin grid($value){
-	@for $a from 1 through 12{
-		.col-#{$value}-#{$a}{
-			width: ($a/12) * 100%;
-		}
-	}
 
-	@for $a from 1 through 12{
-		.col-offset-#{$value}-#{$a}{
-			margin-left: ($a/12) * 100%;
-		}
-	}
-}
-
-@include grid(l); 
 
 /* margin top */
 
 @mixin margin-top{
 	@for $a from 1 through 30{
 		.mt-#{$a}{
-			margin-top: (10px * $a)+5px;
+			margin-top: (5px * $a)+5px;
 		}
 	}
 }
@@ -90,9 +77,14 @@
 
 .outside{
 	background-color: silver;
-	height: 760px;
+	height: 765px;
 	width: 100%;
 	padding: 25px 0;
+
+	@media (min-width: 768px) and (max-width: 1199px)
+	{
+		height: 755px;
+	}
 }
 
 .inside{
@@ -106,4 +98,40 @@
 /* Container header size */
 .section-text{
 	padding: 1em;
+}
+
+	@mixin grid($value){
+	@for $a from 1 through 12{
+		.col-#{$value}-#{$a}{
+			width: ($a/12) * 100%;
+		}
+	}
+
+	@for $a from 1 through 12{
+		.col-offset-#{$value}-#{$a}{
+			margin-left: ($a/12) * 100%;
+		}
+	}
+}
+
+@include grid(l); 
+
+@media (min-width: 768px) and (max-width: 1199px)
+{
+	@include grid(m);
+}
+
+@media(max-width: 767px)
+{
+	body{
+		font-size: 10px;
+	}
+}
+
+/* CHART PHOTO SIZE */
+
+.chart-photo{
+	width: 100%;
+	
+	
 }

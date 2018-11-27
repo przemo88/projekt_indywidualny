@@ -37,10 +37,10 @@
 	@include btn-orange;
 	width: $btn-width / 4;
 	height: $btn-heigth / 2;
+	margin-left: 53%;
+	position:absolute;
+
 	border-radius: 5px;
-	position: absolute;
-	left: 72%;
-	top: 13%;
 	background-image: url('../mini/input-btn.png');
 	background-repeat: no-repeat;
 	background-position: center;

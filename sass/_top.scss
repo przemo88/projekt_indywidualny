@@ -33,11 +33,22 @@
   }
 }
 
+.notification{
+  @include photo;
+   @media(min-width: 768px) and (max-width: 1199px)
+  {
+    width: 1em;
+    height: 1em;
+  }
+  background-image: url('../mini/notification.png');
+  width: 1em;
+  height: 1em;
+}
+
+
 .notification-dotted{
-	@include online;
-	&:before{
-	background-image: url('../mini/orange-dotted.png');
-	position: absolute;
-	margin: 0% 1%;
-			}
+	 @include online;
+   width: 0.5em;
+   height: 0.5em;
+    background: $orange-1;
 }
