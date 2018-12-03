@@ -5,48 +5,20 @@
 
 		.menu-list{
 			line-height: 50px;
+			margin-left: 5%;
 			:hover{
 			background-color:$grey-2;
 		}
+
+		
+		img{
+			padding-right: 10%;
 			
-	}	
+		}	
+	}
 }
 
 /* Mini icons */
-
-.links{
-	@include mini_picture('../mini/links.png');
-}
-
-.details{
-	@include mini_picture('../mini/details.png');
-}
-
-.banners{
-	@include mini_picture('../mini/banners.png');
-}
-
-.payout{
-	@include mini_picture('../mini/payout.png');
-}
-
-.personal{
-	@include mini_picture('../mini/personal.png');
-	
-}
-
-.postback{
-	@include mini_picture('../mini/postback.png');
-}
-
-.star{
-	@include mini_picture('../mini/star.png');
-}
-
-.dotted{
-	@include mini_picture('../mini/dotted.png');
-}
-
 
 .photo{
    @include photo;
@@ -87,9 +59,9 @@
 
 .hamburger{
 	background-image:url('../mini/hamburger.png');
-	width: 50px;
+	width: 60px;
 	height: 20px;
-	margin-left: 5%;
+	margin-left: 1.5%;
 	margin-top: 5%;
 
 	@media (min-width: 768px) and (max-width: 1199px)

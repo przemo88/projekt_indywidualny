@@ -352,197 +352,18 @@ template {
 
 .menu .menu-list {
   line-height: 50px;
+  margin-left: 5%;
 }
 
 .menu .menu-list :hover {
   background-color: #979797;
 }
 
+.menu .menu-list img {
+  padding-right: 10%;
+}
+
 /* Mini icons */
-.links:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .links:before {
-    margin-left: 15%;
-  }
-}
-
-.links:before {
-  content: "";
-  background-image: url("../mini/links.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.details:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .details:before {
-    margin-left: 15%;
-  }
-}
-
-.details:before {
-  content: "";
-  background-image: url("../mini/details.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.banners:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .banners:before {
-    margin-left: 15%;
-  }
-}
-
-.banners:before {
-  content: "";
-  background-image: url("../mini/banners.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.payout:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .payout:before {
-    margin-left: 15%;
-  }
-}
-
-.payout:before {
-  content: "";
-  background-image: url("../mini/payout.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.personal:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .personal:before {
-    margin-left: 15%;
-  }
-}
-
-.personal:before {
-  content: "";
-  background-image: url("../mini/personal.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.postback:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .postback:before {
-    margin-left: 15%;
-  }
-}
-
-.postback:before {
-  content: "";
-  background-image: url("../mini/postback.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.star:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .star:before {
-    margin-left: 15%;
-  }
-}
-
-.star:before {
-  content: "";
-  background-image: url("../mini/star.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-.dotted:before {
-  content: "";
-  margin-left: 10%;
-  margin-right: 3%;
-  margin-bottom: -2px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .dotted:before {
-    margin-left: 15%;
-  }
-}
-
-.dotted:before {
-  content: "";
-  background-image: url("../mini/dotted.png");
-  position: relative;
-  background-repeat: no-repeat;
-}
-
 .photo {
   display: block;
   width: 3em;
@@ -635,9 +456,9 @@ template {
 
 .hamburger {
   background-image: url("../mini/hamburger.png");
-  width: 50px;
+  width: 60px;
   height: 20px;
-  margin-left: 5%;
+  margin-left: 1.5%;
   margin-top: 5%;
 }
 
@@ -803,6 +624,10 @@ template {
 /* Margin */
 .align-right {
   text-align: right;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /* Border */
@@ -1272,8 +1097,8 @@ template {
   background-color: #F58220;
   width: 27.5px;
   height: 20px;
-  margin-left: 53%;
-  position: absolute;
+  position: relative;
+  margin-left: 1%;
   border-radius: 5px;
   background-image: url("../mini/input-btn.png");
   background-repeat: no-repeat;
@@ -1455,8 +1280,8 @@ template {
     background-color: #F58220;
     width: 27.5px;
     height: 20px;
-    margin-left: 53%;
-    position: absolute;
+    position: relative;
+    margin-left: 1%;
     border-radius: 5px;
     background-image: url("../mini/input-btn.png");
     background-repeat: no-repeat;
@@ -1482,5 +1307,8 @@ template {
     max-width: 767px;
     margin: 0 auto;
   }
+  /*.menu{
+	width: 0;
+}*/
 }
 /*# sourceMappingURL=style.css.map */
