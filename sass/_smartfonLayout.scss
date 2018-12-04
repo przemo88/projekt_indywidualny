@@ -5,9 +5,38 @@
 	margin: 0 auto;
 }
 
-/*.menu{
-	width: 0;
-}*/
+.menu{
+	margin-top: 40px;
+	height: 125vh;
+}
+
+.menu-list{
+	font-size: 20px;
+
+	img{
+		padding-left:40%;
+	}
+}
+
+.manager{
+	font-size: 20px;
+}
+
+.photo{
+	width: 4.5em;
+	height: 4.5em;
+	margin-left: 40%;
+}
+
+.online{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.name{
+	font-size: 20px;
+	margin-left: 45%;
+}
 
 }
 

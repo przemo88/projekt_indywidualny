@@ -119,7 +119,7 @@
 
 @include grid(l); 
 
-@media (min-width: 768px) and (max-width: 1199px)
+@media (min-width: 768px)
 {
 	@include grid(m);
 }
@@ -138,6 +138,12 @@
   width: 100%;
  }
 
+@media (min-width: 768px)
+{
+	.chart-photo{
+		width: 100%;
+	}
+}
  .border{
  	 border:1px solid red;
  }
@@ -153,7 +159,15 @@
  .visible{
  	visibility: visible;
  	position: absolute;
- 	margin-top: 1%;
+ 	margin-top: 2%;
  	z-index: 15;
  	width: 1%;
+ }
+
+ .position-fixed{
+ 	position: fixed;
+ }
+
+ .position-absolute{
+ 	position: absolute;
  }
