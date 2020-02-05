@@ -1,14 +1,10 @@
 .menu{
-	height: 1630px;
+	height: 216vh;
 	background-color: $grey-1;
 	color:$white;
-	
+
 		.menu-list{
 			line-height: 50px;
-
-			
-		}
-
 			:hover{
 			background-color:$grey-2;
 		}
@@ -19,8 +15,7 @@
 			
 		}	
 	}
-
-	
+}
 
 /* Mini icons */
 
@@ -51,7 +46,7 @@
 .logo{
 	background-image:url('../mini/logo.png');
 	width: 100%;
-	height: 56px; 
+	height: 36px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	margin-left: 5%;	
@@ -60,15 +55,20 @@
 	{
 		width: auto;
 	}
-}
 
-	
+	@media(max-width: 767px)
+	{
+		width: 100%;
+		height: 15vw;	
+	}
+}
 
 .hamburger{
 	background-image:url('../mini/hamburger.png');
 	width: 20px;
 	height: 20px;
-	margin-left: 12%; 
+	margin-left: 12%;
+	margin-top: 1%;
 	position: fixed;
 	z-index: 10;
 
@@ -76,11 +76,5 @@
 	{
 		top: 2%;	
 	}
-
-	@media (min-width: 191px) and (max-width: 766px){
-		top: 30px;
-		left: 80%;
- 	}
-
 }
 

@@ -37,7 +37,7 @@
 @mixin btn-orange-2{
 	@include btn-orange;
 	width: $btn-width / 4;
-	height: $btn-heigth / 3; 
+	height: $btn-heigth / 2;
 	position:relative;
 	margin-left: 1%;
 	border-radius: 5px;
