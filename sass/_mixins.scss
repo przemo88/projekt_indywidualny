@@ -49,18 +49,24 @@
 
 @mixin border-bottom-links{
 	@include  border-bottom;
-	&:hover{
-		background-color: $grey-3;
-		cursor:pointer;
+	
+	@media (min-width: 351px){
+		&:hover{
+			background-color: $grey-3;
+			cursor:pointer;
+	
+			@include mini_picture('../mini/link.png');
+			
+			&:after{
 
-		@include mini_picture('../mini/link.png');
-		&:after{
-			content: url('../mini/delete.png'); 
-			margin-left: -2%;
-
+				content: url('../mini/delete.png'); 
+				margin-left: -2%;
+	
+			}
+			
 		}
-		
 	}
+		
 }
 
 @mixin photo{

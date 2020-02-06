@@ -2,24 +2,37 @@
 	height: 1630px;
 	background-color: $grey-1;
 	color:$white;
-	
+
 		.menu-list{
 			line-height: 50px;
+			
+			@media (min-width: 351px){
+				:hover{
+					background-color:$grey-2;
+				}
+			}
 
 			
-		}
-
-			:hover{
-			background-color:$grey-2;
-		}
-
-		
-		img{
-			padding-right: 5%;
 			
-		}	
+			img{
+				padding-right: 5%;
+				
+				@media (min-width: 191px) and (max-width: 350px){
+					padding-left: 15%;
+				}
+			}
+		}
+
+			
+
+			
 	}
 
+	.hide{
+		@media (min-width: 191px) and (max-width: 350px){
+			display: none;
+		}
+	}
 	
 
 /* Mini icons */
@@ -77,9 +90,14 @@
 		top: 2%;	
 	}
 
-	@media (min-width: 191px) and (max-width: 766px){
-		top: 30px;
+	@media (min-width: 350px) and (max-width: 766px){
+		top: 25px;
 		left: 80%;
+ 	}
+
+	@media (min-width: 191px) and (max-width: 350px){
+		top: 30px;
+		left: 77%;
  	}
 
 }
