@@ -23,9 +23,19 @@
 }
 
 .photo{
-	width: 4.5em;
+	
+	@media (min-width: 351px){ 
+		width: 4.5em;
 	height: 4.5em;
-	margin-left: 40%;
+	margin-left: 40%; 
+	}
+
+	
+	
+
+	@media (min-width: 191px) and (max-width: 350px){
+		display: none;
+	}
 }
 
 .online{

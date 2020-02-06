@@ -9,7 +9,7 @@ function toggleMenu(visible) {
   document.querySelector('.content').classList.toggle('col-m-12');
   document.querySelector('.menu-list').classList.toggle('show');
   document.querySelector('.photo').classList.toggle('show');
-
+  document.querySelector('.hamburger').classList.toggle('hamburger_left');
 }
 
 

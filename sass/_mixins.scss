@@ -50,7 +50,7 @@
 @mixin border-bottom-links{
 	@include  border-bottom;
 	
-	@media (min-width: 351px){
+	@media (min-width: 451px){
 		&:hover{
 			background-color: $grey-3;
 			cursor:pointer;

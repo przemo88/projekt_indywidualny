@@ -92,8 +92,10 @@
 
 .outside_links{
 	@media (min-width: 191px) and (max-width: 350px){
-		
 		height: 1000px;
+	}
+	@media (min-width: 351px) and (max-width: 766px){
+		height: 1050px;
 	}
 }
 
@@ -108,6 +110,19 @@
 		height: 540px;
 		background-color: white;
 	}
+	@media (min-width: 351px) and (max-width: 766px){
+		height: 1040px;
+	}
+	
+}
+
+.inside_general{
+	@media (min-width: 351px) and (max-width: 766px){
+		width: 95%; 
+		margin: 0 auto;
+		height: 540px;
+		background-color: white;
+	}
 }
 
 .links{
@@ -115,6 +130,7 @@
 		height: 980px;
 		background-color: white;
 	}
+	
 }
 
 /* Container header size */

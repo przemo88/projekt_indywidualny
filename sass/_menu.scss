@@ -30,7 +30,7 @@
 
 	.hide{
 		@media (min-width: 191px) and (max-width: 350px){
-			display: none;
+			border: 1px solid red;
 		}
 	}
 	
@@ -100,5 +100,12 @@
 		left: 77%;
  	}
 
+}
+
+.hamburger_left{
+	margin-left: 1%;
+	@media (min-width: 191px) and (max-width: 766px){
+		margin-left: 12%;
+ 	}
 }
 
